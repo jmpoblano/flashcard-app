@@ -32,7 +32,7 @@ function Layout() {
   const deleteDeckHandler = async () => {
       const reply = window.confirm("Are you sure you want to delete this deck?")
       if (reply){
-          await deleteDeck(id)
+          await deleteDeck()
           history.push("/")
       }
   }
